@@ -51,7 +51,7 @@ We can omit the .js extension, and it will still work correctly.
 | **Code runs in *synchronous* manner | **Code runs in asynchronous manner |
 | **runs in non strict mode           | **runs in strict mode              |
 
-- There are two major differences between these two modules systems thar are important to note:
+- There are two major differences between these two modules systems that are important to note:
 
 **Synchronous vs Asynchronous:**
 - Common JS modules require modules in a synchronous manner, meaning that the next line of code will execute only after the *module has been loaded.*
@@ -79,6 +79,6 @@ in non-strict mode.
 **What is module.exports?**
 
 - *module.exports* is an empty object by default. {}
-- so we can write like this as well:
+- so while exporting a function or variable can write like this as well:
 - module.exports.x = x;
 - module.exports.calculateSum = calculateSum;
