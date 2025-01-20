@@ -42,6 +42,7 @@ We can omit the .js extension, and it will still work correctly.
 
 ## ES Modules (ESM) mjs:
 <br>
+
 |      **CommonJS Modules (cjs)**     |        **ES Modules (mjs)**        |
 |:-----------------------------------:|:----------------------------------:|
 |              require()              |               export               |
