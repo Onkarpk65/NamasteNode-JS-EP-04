@@ -50,3 +50,35 @@ We can omit the .js extension, and it will still work correctly.
 |              Older Way              |              Newer Way             |
 | **Code runs in *synchronous* manner | **Code runs in asynchronous manner |
 | **runs in non strict mode           | **runs in strict mode              |
+
+- There are two major differences between these two modules systems thar are important to note:
+
+**Synchronous vs Asynchronous:**
+- Common JS modules require modules in a synchronous manner, meaning that the next line of code will execute only after the *module has been loaded.*
+- ES modules load modules asynchronously, allowing more efficient and flexible code execution. 
+  
+**Strict mode:**
+- Common JS modules runs in non-strict mode, while ES modules execute in strict mode. This means that ES modules enforce stricter parsing and error handling, makes them genrally safer and more reliable to use.
+- Overall, ES modules are considered better due to these advantages.  
+
+**To use ES modules:**
+
+- create a *package.json* file
+- ` { "type" : "module" } ` in it.
+- This setting indicates that our code will use ES module syntax. 
+
+**Strict Mode Example:** 
+
+- In a CommonJS module, you can define a variable without using var , let , or 
+const , and the code will execute without throwing an error because it operates
+in non-strict mode.
+
+
+- In ES module, we cannot define a variable without using var, let or const, the code will throw an error. i.e we cannot define the variables without declaring them first.
+
+**What is module.exports?**
+
+- *module.exports* is an empty object by default. {}
+- so we can write like this as well:
+- module.exports.x = x;
+- module.exports.calculateSum = calculateSum;
