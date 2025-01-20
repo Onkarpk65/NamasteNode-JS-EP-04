@@ -28,11 +28,11 @@ module.exports = {
 }
 `
 ## Important Note: 
--------------------------------------------------------
 When using the following import statement:
 <br>
 
 ` const {x, calculateSum}= require("./sum"); `
+
 <br>
 
 We can omit the .js extension, and it will still work correctly.
@@ -40,13 +40,12 @@ We can omit the .js extension, and it will still work correctly.
 **summary:** 
 - To use private variables and functions in other modules, we need to export them. This allows other parts of our application to access and utilize those variables and functions.
 
--------------------------------------------------------
 ## ES Modules (ESM) mjs:
 <br>
-| CommonJS Modules (cjs)   | ES Modules (mjs)   |
-|------------|------------|
-| require() | export |
-| module.exports| import {} from "path" |
-| Older Way| Newer Way |
+|      **CommonJS Modules (cjs)**     |        **ES Modules (mjs)**        |
+|:-----------------------------------:|:----------------------------------:|
+|              require()              |               export               |
+|            module.exports           |        import {} from "path"       |
+|              Older Way              |              Newer Way             |
 | **Code runs in *synchronous* manner | **Code runs in asynchronous manner |
-| **runs in non strict mode | **runs in strict mode |
+| **runs in non strict mode           | **runs in strict mode              |
