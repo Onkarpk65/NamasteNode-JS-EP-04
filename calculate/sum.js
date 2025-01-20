@@ -35,4 +35,5 @@ module.exports = {
     console.log('result of calculate sum: ', sum);
 };
  * export let x = 'exports in React exports in Node';
+ * but before adding it we have to make package.json file and add type = module in it
  */
